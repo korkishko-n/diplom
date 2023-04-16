@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вешалки-фонари-пано</title>
+    <link href="https://fonts-online.ru/fonts/nord-star-deco" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="/styleGallery.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">ДОМ</a></li>
+                <li><a href="Page.html">ГАЛЕРЕЯ</a></li>
+                <li><a href="HtmlContact.html">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        @font-face {
+            font-family: 'Nord Star Deco';
+            src: url('https://fonts-online.ru/fonts/nord-star-deco/NordStarDeco-Regular.ttf') format('truetype');
+        }
+        header {
+            background-color: black;
+            color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            width: 319px;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+            }
+
+            nav li {
+                margin: 0 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                text-align: center;
+                color: whitesmoke;
+                text-decoration: none;
+                font-family: "Nord-Star Deco";
+                padding: 10px 20px;
+                transition: 0.2s ease color;
+            }
+
+                nav a:before,
+                nav a:after {
+                    content: "";
+                    position: absolute;
+                    border-radius: 50%;
+                    transform: scale(0);
+                    transition: 0.2s ease transform;
+                }
+
+                nav a:before {
+                    top: 0;
+                    left: 10px;
+                    width: 6px;
+                    height: 6px;
+                }
+
+                nav a:after {
+                    top: 5px;
+                    left: 18px;
+                    width: 4px;
+                    height: 4px;
+                }
+
+                nav a:nth-child(1):before {
+                    background-color: black;
+                }
+
+                nav a:nth-child(1):after {
+                    background-color: black;
+                }
+
+                nav a:nth-child(2):before {
+                    background-color: black;
+                }
+
+                nav a:nth-child(2):after {
+                    background-color: black;
+                }
+
+                nav a:nth-child(3):before {
+                    background-color: black;
+                }
+
+                nav a:nth-child(3):after {
+                    background-color: black;
+                }
+
+        #indicator {
+            position: absolute;
+            left: 5%;
+            bottom: 0;
+            width: 30px;
+            height: 3px;
+            background-color: #1C1A1A;
+            border-radius: 5px;
+            transition: 0.2s ease left;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+            nav a:hover:before,
+            nav a:hover:after {
+                transform: scale(1);
+            }
+
+        nav a:nth-child(1):hover ~ #indicator {
+            background: linear-gradient(130deg, red, red);
+        }
+
+        nav a:nth-child(2):hover ~ #indicator {
+            left: 34%;
+            background: linear-gradient(130deg, red, red);
+        }
+
+        nav a:nth-child(3):hover ~ #indicator {
+            left: 70%;
+            background: linear-gradient(130deg, red, red);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 400px; /* задайте здесь нужную высоту изображения */
+            object-fit: cover;
+        }
+
+        body {
+            background-image: url('img/backgroundPage.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+    <section class="gallery">
+        <div class="gallery-list">
+
+            <a href="img/imgeGallery/вешалки-фонари-пано/1.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/1.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/2.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/2.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/3.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/3.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/4.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/4.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/5.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/5.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/6.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/6.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/7.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/7.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/8.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/8.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/9.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/9.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/10.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/10.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/11.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/11.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/12.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/1.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/13.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/13.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/14.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/14.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/15.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/15.jpg" alt="alt">
+            </a>
+            <a href="img/imgeGallery/вешалки-фонари-пано/16.jpg" class="gallery-item">
+                <div class="gallery-item-hover">СМОТРЕТЬ</div>
+                <img src="img/imgeGallery/вешалки-фонари-пано/16.jpg" alt="alt">
+            </a>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script>
+        $(".gallery-list").magnificPopup({
+            delegate: "a",
+            type: "image",
+            gallery: {
+                enabled: true
+            }
+        });
+    </script>
+</body>
+</html>
