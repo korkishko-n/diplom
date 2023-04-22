@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="StyleSheet.css">
     <script src="/JavaScript.js"></script>
-    <title>Главная страница</title>
+    <title></title>
     <style>
         header {
             color: black;
@@ -43,14 +43,14 @@
 <body>
     <!-- Шапка страницы -->
     <header>
-        
-        <img src="img/эмблема2.png" alt="Картинка в шапке страницы" />
+
+        <img src="img/logo3.png" alt="Картинка в шапке страницы" />
         <button class="burger-menu-btn">&#9776;</button>
     </header>
 
     <!-- Ссылки меню -->
     <nav>
-        <a href="Index.html">ГЛАВНАЯ</a>
+        <a href="index.html">ГЛАВНАЯ</a>
         <a href="Portfolio.html">ПОРТФОЛИО</a>
         <a href="Uslugi.html">УСЛУГИ</a>
         <a href="Kontact.html">КОНТАКТЫ</a>
@@ -72,21 +72,22 @@
         </a>
 
     </header>
-        <div class="container">
-            
-            <form>
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Сообщение:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <input type="submit" value="Отправить">
-            </form>
-        </div>
-        <div class="parallax"></div>
-        <footer>
-            <p>Все права защищены ©NIKOLA</p>
-        </footer>
-    </body>
+    <div class="container">
+        <form action="mailto:korkish88@hotmail.com" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="consent"><input type="checkbox" id="consent" name="consent" value="yes" required> Согласен с передачей персональных данных</label>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <div class="parallax"></div>
+    <footer>
+        <p>Все права защищены ©NIKOLA</p>
+    </footer>
+</body>
 </html>
